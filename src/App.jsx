@@ -1,7 +1,10 @@
+import Account from "./components/Account/Account";
+import './App.css';
+
 function App() {
   return (
-    <div></div>
-  )
+    <Account />
+  );
 }
 
-export default App
+export default App;
