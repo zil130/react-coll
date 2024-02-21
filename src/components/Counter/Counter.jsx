@@ -1,7 +1,7 @@
 import css from './Counter.module.css';
 
 function Counter({ count, title, handleTabClick, isActive = false }) {
-  const btnClasses = [css.btn, isActive ? css.btnActive : ''].join(' ');
+  const btnClasses = [css.btn, isActive ? css.btnActive : ''].join(' ').trim();
 
   return (
     <button
