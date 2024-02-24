@@ -3,6 +3,7 @@ import Account from "./components/Account/Account";
 import Counters from "./components/Counters/Counters";
 import Search from "./components/Search/Search";
 import VinylList from "./components/VinylList/VinylList";
+import albums from './data/albums.json';
 import './App.css';
 
 function App() {
@@ -17,10 +18,11 @@ function App() {
       <Account />
       <Counters
         activeTab={activeTab}
+        albums={albums}
         handleTabClick={handleTabClick}
       />
       <Search />
-      <VinylList />
+      <VinylList albums={albums} activeTab={activeTab} />
     </div>
   );
 }

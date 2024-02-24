@@ -1,23 +1,18 @@
 import VinylItem from "../VinylItem/VinylItem";
 import css from './VinylList.module.css';
 
-function VinylList() {
+function VinylList({ albums, activeTab }) {
+  const filteringRules = {
+    'Total': () => true,
+    'Has': (album) => album.has,
+    'Wants': (album) => !album.has,
+  };
+
+  const filteredAlbums = albums.filter(filteringRules[activeTab]);
+
   return (
     <div className={css.layout}>
-      <VinylItem />
-      <VinylItem />
-      <VinylItem />
-      <VinylItem />
-      <VinylItem />
-      <VinylItem />
-      <VinylItem />
-      <VinylItem />
-      <VinylItem />
-      <VinylItem />
-      <VinylItem />
-      <VinylItem />
-      <VinylItem />
-      <VinylItem />
+      {filteredAlbums.map((album) => <VinylItem key={album.id} album={album} />)}
     </div>
   );
 }

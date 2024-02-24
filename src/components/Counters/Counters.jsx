@@ -1,24 +1,28 @@
 import Counter from '../Counter/Counter';
 import css from './Counters.module.css';
 
-function Counters({ activeTab, handleTabClick }) {
+function Counters({ activeTab, albums, handleTabClick }) {
+  const total = albums.length;
+  const has = albums.filter((album) => album.has).length;
+  const wants = total - has;
+
   return (
     <div className={css.counters}>
       <Counter
         handleTabClick={handleTabClick}
-        count="404"
+        count={total}
         title="Total"
         isActive={activeTab === 'Total'}
       />
       <Counter
         handleTabClick={handleTabClick}
-        count="253"
+        count={has}
         title="Has"
         isActive={activeTab === 'Has'}
       />
       <Counter
         handleTabClick={handleTabClick}
-        count="151"
+        count={wants}
         title="Wants"
         isActive={activeTab === 'Wants'}
       />
