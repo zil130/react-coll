@@ -1,0 +1,16 @@
+{
+  "name": "User Name",
+  "description": "User Description",
+  "links": [
+    {
+      "id": 1,
+      "title": "instagram",
+      "link": "instagram.com"
+    },
+    {
+      "id": 2,
+      "title": "twitter",
+      "link": "twitter.com"
+    }
+  ]
+}
