@@ -5,12 +5,12 @@
     {
       "id": 1,
       "title": "instagram",
-      "link": "instagram.com"
+      "link": "https://instagram.com"
     },
     {
       "id": 2,
       "title": "twitter",
-      "link": "twitter.com"
+      "link": "https://twitter.com"
     }
   ]
 }
