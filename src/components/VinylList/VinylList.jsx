@@ -11,9 +11,11 @@ function VinylList({ albums, activeTab, searchQuery }) {
 
   const filteredAlbums = albums
     .filter(filteringRules[activeTab])
-    .filter(({ artist, title, year }) => artist.toLowerCase().includes(searchQueryNormalized)
+    .filter(({ artist, title, year }) => (
+      artist.toLowerCase().includes(searchQueryNormalized)
         || title.toLowerCase().includes(searchQueryNormalized)
-        || year.toLowerCase().includes(searchQueryNormalized));
+        || year.toLowerCase().includes(searchQueryNormalized)
+    ));
 
   return (
     filteredAlbums.length > 0

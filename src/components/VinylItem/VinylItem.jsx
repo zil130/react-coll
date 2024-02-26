@@ -5,11 +5,11 @@ function VinylItem({
     artist, title, year, imgUrl, has,
   },
 }) {
-  const classes = [css.imgWrapper, has ? css.has : ''].join(' ').trim();
+  const imgClasses = [css.imgWrapper, has ? css.has : ''].join(' ').trim();
 
   return (
     <div>
-      <div className={classes}>
+      <div className={imgClasses}>
         <img
           className={css.img}
           src={imgUrl}

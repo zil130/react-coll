@@ -3,14 +3,12 @@
   "description": "User Description",
   "links": [
     {
-      "id": 1,
       "title": "instagram",
-      "link": "https://instagram.com"
+      "url": "https://instagram.com"
     },
     {
-      "id": 2,
       "title": "twitter",
-      "link": "https://twitter.com"
+      "url": "https://twitter.com"
     }
   ]
 }
