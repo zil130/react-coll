@@ -1,12 +1,15 @@
 import css from './Counter.module.css';
 
-function Counter({ count, title, handleTabClick, isActive = false }) {
+function Counter({
+  count, title, handleTabClick, isActive = false,
+}) {
   const btnClasses = [css.btn, isActive ? css.btnActive : ''].join(' ').trim();
 
   return (
     <button
       onClick={() => handleTabClick(title)}
       className={btnClasses}
+      type="button"
     >
       <span>{count}</span>
       <span>{title}</span>

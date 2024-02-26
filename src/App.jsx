@@ -1,8 +1,8 @@
-import { useState } from "react";
-import UserInfo from "./components/UserInfo/UserInfo";
-import Counters from "./components/Counters/Counters";
-import Search from "./components/Search/Search";
-import VinylList from "./components/VinylList/VinylList";
+import { useState } from 'react';
+import UserInfo from './components/UserInfo/UserInfo';
+import Counters from './components/Counters/Counters';
+import Search from './components/Search/Search';
+import VinylList from './components/VinylList/VinylList';
 import albums from './data/albums.json';
 import user from './data/user.json';
 import './App.css';
@@ -11,13 +11,8 @@ function App() {
   const [activeTab, setActiveTab] = useState('Total');
   const [searchQuery, setSearchQuery] = useState('');
 
-  function handleTabClick(tab) {
-    setActiveTab(tab);
-  }
-
-  function handleSearchQueryChange(query) {
-    setSearchQuery(query);
-  }
+  const handleTabClick = (tab) => setActiveTab(tab);
+  const handleSearchQueryChange = (query) => setSearchQuery(query);
 
   return (
     <div className="App">

@@ -1,6 +1,10 @@
 import css from './VinylItem.module.css';
 
-function VinylItem({ album: { artist, title, year, imgUrl, has } }) {
+function VinylItem({
+  album: {
+    artist, title, year, imgUrl, has,
+  },
+}) {
   const classes = [css.imgWrapper, has ? css.has : ''].join(' ').trim();
 
   return (

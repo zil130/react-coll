@@ -1,8 +1,7 @@
 import css from './UserInfo.module.css';
 
 function UserInfo({ user: { name, description, links } }) {
-  const socialLinks = links.map(({ title, link }) =>
-    <a key={link} className={css.link} href={link} target='_blank'>{title}</a>)
+  const socialLinks = links.map(({ title, link }) => <a key={link} className={css.link} href={link} target="_blank">{title}</a>);
 
   return (
     <header className={css.header}>
