@@ -21,8 +21,8 @@ const UserInfo: FC<UserInfoProps> = ({ user: { name, description, links } }) => 
 
   return (
     <header className={css.header}>
-      <h1>{name}</h1>
-      <div><span>{description}</span></div>
+      <h1 className={css.title}>{name}</h1>
+      <div className={css.desc}><span>{description}</span></div>
       <div className={css.links}>{socialLinks}</div>
     </header>
   )

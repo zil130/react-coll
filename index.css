@@ -1,7 +1,13 @@
+@font-face {
+  font-family: 'jetbrains', monospace;
+  src: url('./src/assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf') format('ttf');
+}
+
 body {
   display: flex;
   justify-content: center;
   padding: 20px;
-  background-color: #d4b2b2;
-  color: #000000;
+  background-color: #28292A;
+  font-family: "JetBrains Mono", monospace;
+  color: #CBCDD1;
 }

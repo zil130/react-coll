@@ -20,8 +20,8 @@ const Counter: FC<CountersProps> = ({
       className={btnClasses}
       type="button"
     >
-      <span>{count}</span>
-      <span>{title}</span>
+      <span className={css.count}>{count}</span>
+      <span className={css.title}>{title}</span>
     </button>
   )
 }

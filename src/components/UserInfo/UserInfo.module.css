@@ -3,7 +3,19 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.desc {
+  padding-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .links {
@@ -12,10 +24,27 @@
 }
 
 .link {
-  color: #ffffff;
-  text-decoration: none;
+  font-size: 18px;
+  font-style: italic;
+  color: #CBCDD1;
+  text-decoration: underline;
+  text-transform: lowercase;
 }
 
 .link:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
 }

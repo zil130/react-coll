@@ -1,7 +1,7 @@
 .imgWrapper {
   border-radius: 15px;
   overflow: hidden;
-  opacity: 0.2;
+  opacity: 0.1;
   cursor: pointer;
 }
 
@@ -16,4 +16,15 @@
 
 .has {
   opacity: 1;
+}
+
+.artist {
+  padding-bottom: 10px;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 16px;
+  font-style: italic;
 }

@@ -1,6 +1,16 @@
-.counters {
+.wrapper {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-bottom: 50px;
+  padding-top: 50px;
+}
+
+.counters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 100px));
+}
+
+@media screen and (max-width: 800px) {
+  .counters {
+    grid-template-columns: repeat(3, minmax(0, 70px));
+  }
 }

@@ -2,12 +2,36 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 3px;
+  padding-bottom: 5px;
   border: none;
   background-color: transparent;
-  color: #ffffff;
+  color: #CBCDD1;
   cursor: pointer;
 }
 
 .btnActive {
-  color: #000000;
+  background-color: #4B737B;
+  border-radius: 30px;
+  font-weight: bold;
+  color: #CBCDD1;
+  cursor: default;
+}
+
+.count {
+  font-size: 38px;
+}
+
+.title {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 800px) {
+  .count {
+    font-size: 26px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
 }
