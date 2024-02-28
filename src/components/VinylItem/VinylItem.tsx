@@ -22,7 +22,7 @@ const VinylItem: FC<VinylItemProps> = ({
           alt={title}
         />
       </div>
-      <div>
+      <div className={css.info}>
         <p className={css.artist}>{artist}</p>
         <p className={css.title}>{title}</p>
         <p>{year}</p>
