@@ -3,6 +3,12 @@
   src: url('./src/assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf') format('ttf');
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   justify-content: center;
