@@ -9,7 +9,7 @@ import { Tabs } from './models/Tabs'
 import './App.css'
 
 const App: FC = () => {
-  const [activeTab, setActiveTab] = useState<Tabs>(Tabs.total)
+  const [activeTab, setActiveTab] = useState<Tabs>(Tabs.has)
   const [searchQuery, setSearchQuery] = useState<string>('')
 
   const handleTabClick = (tab: Tabs): void => { setActiveTab(tab) }

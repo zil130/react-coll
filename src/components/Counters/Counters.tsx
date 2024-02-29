@@ -20,12 +20,6 @@ const Counters: FC<CountersProps> = ({ activeTab, albums, handleTabClick }) => {
       <div className={css.counters}>
         <Counter
           handleTabClick={handleTabClick}
-          count={total}
-          title={Tabs.total}
-          isActive={activeTab === 'Total'}
-        />
-        <Counter
-          handleTabClick={handleTabClick}
           count={has}
           title={Tabs.has}
           isActive={activeTab === 'Has'}
@@ -35,6 +29,12 @@ const Counters: FC<CountersProps> = ({ activeTab, albums, handleTabClick }) => {
           count={wants}
           title={Tabs.wants}
           isActive={activeTab === 'Wants'}
+        />
+        <Counter
+          handleTabClick={handleTabClick}
+          count={total}
+          title={Tabs.total}
+          isActive={activeTab === 'Total'}
         />
       </div>
     </div>
