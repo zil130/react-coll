@@ -12,9 +12,9 @@ interface VinylListProps {
 
 const VinylList: FC<VinylListProps> = ({ albums, activeTab, searchQuery }) => {
   const filteringRules = {
-    Total: () => true,
-    Has: (album: IAlbum) => album.has,
-    Wants: (album: IAlbum) => !album.has
+    total: () => true,
+    has: (album: IAlbum) => album.has,
+    wants: (album: IAlbum) => !album.has
   }
   const searchQueryNormalized = searchQuery.toLowerCase().trim()
 

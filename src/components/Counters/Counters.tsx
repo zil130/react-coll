@@ -22,19 +22,19 @@ const Counters: FC<CountersProps> = ({ activeTab, albums, handleTabClick }) => {
           handleTabClick={handleTabClick}
           count={has}
           title={Tabs.has}
-          isActive={activeTab === 'Has'}
+          isActive={activeTab === Tabs.has}
         />
         <Counter
           handleTabClick={handleTabClick}
           count={wants}
           title={Tabs.wants}
-          isActive={activeTab === 'Wants'}
+          isActive={activeTab === Tabs.wants}
         />
         <Counter
           handleTabClick={handleTabClick}
           count={total}
           title={Tabs.total}
-          isActive={activeTab === 'Total'}
+          isActive={activeTab === Tabs.total}
         />
       </div>
     </div>

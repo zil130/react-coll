@@ -1,5 +1,5 @@
 export enum Tabs {
-  total = 'Total',
-  has = 'Has',
-  wants = 'Wants',
+  has = 'has',
+  wants = 'wants',
+  total = 'total',
 }
