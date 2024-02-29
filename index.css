@@ -1,6 +1,12 @@
 @font-face {
-  font-family: 'jetbrains', monospace;
-  src: url('./src/assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf') format('ttf');
+  font-family: "JetBrains Mono";
+  src: url('./src/assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url('./src/assets/fonts/JetBrains_Mono/JetBrainsMono-Italic-VariableFont_wght.ttf') format('truetype');
+  font-style: italic;
 }
 
 * {
