@@ -30,7 +30,13 @@ const VinylList: FC<VinylListProps> = ({ albums, activeTab, searchQuery }) => {
     filteredAlbums.length > 0
       ? (
         <div className={css.layout}>
-          {filteredAlbums.map((album) => <VinylItem key={album.id} album={album} />)}
+          {filteredAlbums.map((album) => (
+            <VinylItem
+              key={album.id}
+              album={album}
+              activeTab={activeTab}
+            />
+          ))}
         </div>
         )
       : <p className={css.nothingFound}>Nothing found</p>

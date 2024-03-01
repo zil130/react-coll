@@ -1,17 +1,22 @@
 import { type FC } from 'react'
 import { type IAlbum } from '../../models/IAlbum'
 import css from './VinylItem.module.css'
+import { Tabs } from '../../models/Tabs'
 
 interface VinylItemProps {
   album: IAlbum
+  activeTab: Tabs
 }
 
 const VinylItem: FC<VinylItemProps> = ({
   album: {
     artist, title, year, imgUrl, has
-  }
+  },
+  activeTab
 }) => {
-  const imgClasses = [css.imgWrapper, has ? css.has : ''].join(' ').trim()
+  const imgClasses = activeTab === Tabs.total
+    ? [css.imgWrapper, has ? '' : css.opacity].join(' ').trim()
+    : css.imgWrapper
 
   return (
     <div>
