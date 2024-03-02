@@ -16,16 +16,30 @@ const VinylList: FC<VinylListProps> = ({ albums, activeTab, searchQuery }) => {
     has: (album: IAlbum) => album.has,
     wants: (album: IAlbum) => !album.has,
   };
+
   const searchQueryNormalized = searchQuery.toLowerCase().trim();
+
+  const filterBySearchQuery = ({ artist, title, year }: IAlbum): boolean =>
+    artist.toLowerCase().includes(searchQueryNormalized) ||
+    title.toLowerCase().includes(searchQueryNormalized) ||
+    year.toString().includes(searchQueryNormalized);
+
+  const compareAlbums = (a: IAlbum, b: IAlbum): number => {
+    const articles = /^(a|an|the)\s+/i;
+    const artistA = a.artist.replace(articles, '').toLowerCase();
+    const artistB = b.artist.replace(articles, '').toLowerCase();
+
+    if (artistA === artistB) {
+      return a.year - b.year;
+    }
+
+    return artistA.localeCompare(artistB);
+  };
 
   const filteredAlbums = albums
     .filter(filteringRules[activeTab])
-    .filter(
-      ({ artist, title, year }) =>
-        artist.toLowerCase().includes(searchQueryNormalized) ||
-        title.toLowerCase().includes(searchQueryNormalized) ||
-        year.toString().includes(searchQueryNormalized),
-    );
+    .filter(filterBySearchQuery)
+    .sort(compareAlbums);
 
   return filteredAlbums.length > 0 ? (
     <div className={css.layout}>
