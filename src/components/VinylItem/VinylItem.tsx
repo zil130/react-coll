@@ -9,7 +9,7 @@ interface VinylItemProps {
 }
 
 const VinylItem: FC<VinylItemProps> = ({
-  album: { artist, title, year, imgUrl, has },
+  album: { title, year, imgUrl, has },
   activeTab,
 }) => {
   const imgClasses =
@@ -23,7 +23,6 @@ const VinylItem: FC<VinylItemProps> = ({
         <img className={css.img} src={imgUrl} alt={title} />
       </div>
       <div className={css.info}>
-        <p className={css.artist}>{artist}</p>
         <p className={css.title}>{title}</p>
         <p>{year}</p>
       </div>

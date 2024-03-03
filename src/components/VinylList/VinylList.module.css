@@ -1,8 +1,13 @@
+.artist {
+  padding-top: 50px;
+  border-bottom: 2px solid #4B737B;
+}
+
 .layout {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 15px;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .nothingFound {

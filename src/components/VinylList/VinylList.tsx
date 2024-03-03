@@ -11,7 +11,21 @@ interface VinylListProps {
 }
 
 const VinylList: FC<VinylListProps> = ({ albums, activeTab, searchQuery }) => {
-  const filteringRules = {
+  const groupAlbumsByArtist = (albums: IAlbum[]): IAlbum[][] => {
+    const groupedAlbums: Record<string, IAlbum[]> = {};
+
+    albums.forEach((album) => {
+      if (album.artist in groupedAlbums) {
+        groupedAlbums[album.artist].push(album);
+      } else {
+        groupedAlbums[album.artist] = [album];
+      }
+    });
+
+    return Object.values(groupedAlbums);
+  };
+
+  const filteringRules: Record<Tabs, (album: IAlbum) => boolean> = {
     total: () => true,
     has: (album: IAlbum) => album.has,
     wants: (album: IAlbum) => !album.has,
@@ -36,20 +50,27 @@ const VinylList: FC<VinylListProps> = ({ albums, activeTab, searchQuery }) => {
     return artistA.localeCompare(artistB);
   };
 
-  const filteredAlbums = albums
-    .filter(filteringRules[activeTab])
-    .filter(filterBySearchQuery)
-    .sort(compareAlbums);
-
-  return filteredAlbums.length > 0 ? (
-    <div className={css.layout}>
-      {filteredAlbums.map((album) => (
-        <VinylItem key={album.id} album={album} activeTab={activeTab} />
-      ))}
-    </div>
-  ) : (
-    <p className={css.nothingFound}>Nothing found</p>
+  const albumsByArtist = groupAlbumsByArtist(
+    albums
+      .filter(filteringRules[activeTab])
+      .filter(filterBySearchQuery)
+      .sort(compareAlbums),
   );
+
+  if (albumsByArtist.length === 0) {
+    return <p className={css.nothingFound}>Nothing found</p>;
+  }
+
+  return albumsByArtist.map((albums) => (
+    <div key={albums[0].artist}>
+      <div className={css.artist}>{albums[0].artist}</div>
+      <div className={css.layout}>
+        {albums.map((album) => (
+          <VinylItem key={album.id} album={album} activeTab={activeTab} />
+        ))}
+      </div>
+    </div>
+  ));
 };
 
 export default VinylList;
