@@ -1,13 +1,18 @@
 .artist {
   padding-top: 50px;
   border-bottom: 2px solid #4B737B;
+  cursor: pointer;
 }
 
-.layout {
+.displayGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 15px;
   padding-top: 20px;
+}
+
+.displayNone {
+  display: none;
 }
 
 .nothingFound {
@@ -16,19 +21,19 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .layout {
+  .displayGrid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .layout {
+  .displayGrid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .layout {
+  .displayGrid {
     grid-template-columns: 1fr 1fr;
   }
 }

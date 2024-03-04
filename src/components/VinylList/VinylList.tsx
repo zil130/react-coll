@@ -8,9 +8,17 @@ interface VinylListProps {
   albums: IAlbum[];
   activeTab: Tabs;
   searchQuery: string;
+  hiddenArtists: string[];
+  handleArtistClick: (artist: string) => void;
 }
 
-const VinylList: FC<VinylListProps> = ({ albums, activeTab, searchQuery }) => {
+const VinylList: FC<VinylListProps> = ({
+  albums,
+  activeTab,
+  searchQuery,
+  hiddenArtists,
+  handleArtistClick,
+}) => {
   const groupAlbumsByArtist = (albums: IAlbum[]): IAlbum[][] => {
     const groupedAlbums: Record<string, IAlbum[]> = {};
 
@@ -63,8 +71,22 @@ const VinylList: FC<VinylListProps> = ({ albums, activeTab, searchQuery }) => {
 
   return albumsByArtist.map((albums) => (
     <div key={albums[0].artist}>
-      <div className={css.artist}>{albums[0].artist}</div>
-      <div className={css.layout}>
+      <div
+        onClick={() => {
+          handleArtistClick(albums[0].artist);
+        }}
+        className={css.artist}
+      >
+        {hiddenArtists.includes(albums[0].artist) ? '+ ' : '- '}
+        {albums[0].artist}
+      </div>
+      <div
+        className={
+          hiddenArtists.includes(albums[0].artist)
+            ? css.displayNone
+            : css.displayGrid
+        }
+      >
         {albums.map((album) => (
           <VinylItem key={album.id} album={album} activeTab={activeTab} />
         ))}

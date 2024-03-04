@@ -11,12 +11,22 @@ import './App.css';
 const App: FC = () => {
   const [activeTab, setActiveTab] = useState<Tabs>(Tabs.has);
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [hiddenArtists, setHiddenArtists] = useState<string[]>([]);
 
   const handleTabClick = (tab: Tabs): void => {
     setActiveTab(tab);
   };
   const handleSearchQueryChange = (query: string): void => {
     setSearchQuery(query);
+    setHiddenArtists([]);
+  };
+
+  const handleArtistClick = (artist: string): void => {
+    setHiddenArtists(
+      hiddenArtists.includes(artist)
+        ? hiddenArtists.filter((a) => artist !== a)
+        : [...hiddenArtists, artist],
+    );
   };
 
   return (
@@ -35,6 +45,8 @@ const App: FC = () => {
         albums={albums}
         activeTab={activeTab}
         searchQuery={searchQuery}
+        hiddenArtists={hiddenArtists}
+        handleArtistClick={handleArtistClick}
       />
     </div>
   );
