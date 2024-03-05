@@ -16,17 +16,28 @@ const App: FC = () => {
   const handleTabClick = (tab: Tabs): void => {
     setActiveTab(tab);
   };
+
   const handleSearchQueryChange = (query: string): void => {
     setSearchQuery(query);
     setHiddenArtists([]);
   };
 
   const handleArtistClick = (artist: string): void => {
-    setHiddenArtists(
-      hiddenArtists.includes(artist)
-        ? hiddenArtists.filter((a) => artist !== a)
-        : [...hiddenArtists, artist],
-    );
+    if (hiddenArtists.includes(artist)) {
+      setHiddenArtists(hiddenArtists.filter((a) => artist !== a));
+    } else {
+      setHiddenArtists([...hiddenArtists, artist]);
+    }
+  };
+
+  const handleBtnInputClick = (): void => {
+    if (searchQuery.length > 0) {
+      setSearchQuery('');
+    } else if (hiddenArtists.length > 0) {
+      setHiddenArtists([]);
+    } else {
+      setHiddenArtists([...new Set(albums.map((album) => album.artist))]);
+    }
   };
 
   return (
@@ -40,6 +51,8 @@ const App: FC = () => {
       <Search
         searchQuery={searchQuery}
         handleSearchQueryChange={handleSearchQueryChange}
+        hiddenArtists={hiddenArtists}
+        handleBtnInputClick={handleBtnInputClick}
       />
       <VinylList
         albums={albums}
