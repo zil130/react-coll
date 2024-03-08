@@ -5,4 +5,5 @@ export interface IAlbum {
   year: number;
   imgUrl: string;
   has: boolean;
+  favorite: boolean;
 }

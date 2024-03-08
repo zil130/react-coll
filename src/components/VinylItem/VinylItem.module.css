@@ -1,10 +1,14 @@
+.vinylItem {
+  position: relative;
+  cursor: pointer;
+}
+
 .imgWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   overflow: hidden;
-  cursor: pointer;
 }
 
 .img {
@@ -13,12 +17,22 @@
   object-fit: cover;
 }
 
-.opacity {
-  opacity: 0.1;
+.opacity02 {
+  opacity: 0.2;
 }
 
-.opacity:hover {
+.opacity1 {
   opacity: 1;
+}
+
+.opacity02:hover {
+  opacity: 1;
+}
+
+.heart {
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
 .info {

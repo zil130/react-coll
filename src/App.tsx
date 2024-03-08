@@ -12,6 +12,7 @@ const App: FC = () => {
   const [activeTab, setActiveTab] = useState<Tabs>(Tabs.has);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [hiddenArtists, setHiddenArtists] = useState<string[]>([]);
+  const [onlyFavorites, setOnlyFavorites] = useState<boolean>(false);
 
   const handleTabClick = (tab: Tabs): void => {
     setActiveTab(tab);
@@ -40,6 +41,10 @@ const App: FC = () => {
     }
   };
 
+  const handleOnlyFavorites = (): void => {
+    setOnlyFavorites(!onlyFavorites);
+  };
+
   return (
     <div className="App">
       <UserInfo user={user} />
@@ -53,12 +58,14 @@ const App: FC = () => {
         handleSearchQueryChange={handleSearchQueryChange}
         hiddenArtists={hiddenArtists}
         handleBtnInputClick={handleBtnInputClick}
+        handleOnlyFavorites={handleOnlyFavorites}
       />
       <VinylList
         albums={albums}
         activeTab={activeTab}
         searchQuery={searchQuery}
         hiddenArtists={hiddenArtists}
+        onlyFavorites={onlyFavorites}
         handleArtistClick={handleArtistClick}
       />
     </div>

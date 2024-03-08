@@ -5,7 +5,8 @@
     "title": "In Utero",
     "year": 1993,
     "imgUrl": "https://i.discogs.com/gNQVu6AuSDuzYbihaWeXq8BnpEaDjznO07PwZN3YmD0/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNzMz/MjktMTMwMTM3OTM2/MS5qcGVn.jpeg",
-    "has": false
+    "has": false,
+    "favorite": true
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "title": "Apocalypse 91... The Enemy Strikes Black",
     "year": 1991,
     "imgUrl": "https://i.discogs.com/GeZEJ5mTEtmGDEqfIcSYJOTIlIBsL2x9j_fhD7HxUQo/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3Njgw/NC0xMzUxNzYzMTM2/LTExMTQuanBlZw.jpeg",
-    "has": true
+    "has": true,
+    "favorite": false
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "title": "Californication",
     "year": 1999,
     "imgUrl": "https://i.discogs.com/R_fxprlYAxXCGt7UBXS3S6akBh_XxC_k_FEJS5mDW6U/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwMzk3/Mi0xNjM4NjI5NDUy/LTM3MDguanBlZw.jpeg",
-    "has": false
+    "has": false,
+    "favorite": true
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "title": "Fear of a Black Planet",
     "year": 1990,
     "imgUrl": "https://i.discogs.com/iX1zU28PszoIkJJuyiP7dnV7QR5XTDAaZltOiIUttik/rs:fit/g:sm/q:90/h:588/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4OTU3/LTEyMDY1MzA5MjEu/anBlZw.jpeg",
-    "has": false
+    "has": false,
+    "favorite": false
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "title": "Cypress Hill III: Temples of Boom",
     "year": 1995,
     "imgUrl": "https://i.discogs.com/cPFayYnJYayQsrSfEVZahiTKDMSqVimAYaMo03m14c0/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMDc5/MDkwLTE1MDk2Mjky/NDQtNjU1MS5qcGVn.jpeg",
-    "has": false
+    "has": false,
+    "favorite": true
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "title": "Los Grandes Éxitos En Español",
     "year": 1999,
     "imgUrl": "https://i.discogs.com/SdScpKD11FMzVhFM773IGHzLf5JHHAhJRXTLaB6dR1k/rs:fit/g:sm/q:90/h:459/w:453/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1Mzc5/OC0xMjAyNTY1MTI2/LmpwZWc.jpeg",
-    "has": true
+    "has": true,
+    "favorite": false
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "title": "It Takes a Nation of Millions to Hold Us Back",
     "year": 1988,
     "imgUrl": "https://i.discogs.com/95HQL_1OAchh6qRqFY4oJILzjEYXqGirR5dSLaulisE/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc3NTIy/OC0xNDQ4MTM1NDU3/LTIyNTAuanBlZw.jpeg",
-    "has": true
+    "has": true,
+    "favorite": true
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "title": "Blood Sugar Sex Magik",
     "year": 1991,
     "imgUrl": "https://i.discogs.com/TBFMsp_ki2nO56jvJ4CR7X5KwWGv1Apai7DPg-3usyI/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3NTQ5/MS0xNTA3MjkyNTg2/LTE5NDIuanBlZw.jpeg",
-    "has": true
+    "has": true,
+    "favorite": false
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "title": "Music for the Jilted Generation",
     "year": 1994,
     "imgUrl": "https://i.discogs.com/r_KqzFE3mSa7xZR-Uz-UPMpkX_MB269nUUAAk21CNa4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1MjYt/MTM3MDg2MjY3Ny0y/NjI3LmpwZWc.jpeg",
-    "has": true
+    "has": true,
+    "favorite": true
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "title": "It Was Written",
     "year": 1996,
     "imgUrl": "https://i.discogs.com/CaNnEy8noqvqSbU2zRO2LDg7YpZgaukKOP8kcZcisoo/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5ODE1/MS0xNjYwNDI4MjYx/LTc4OTQuanBlZw.jpeg",
-    "has": false
+    "has": false,
+    "favorite": false
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "title": "Cypress Hill",
     "year": 1991,
     "imgUrl": "https://i.discogs.com/62nc9OIigVkzShkltQMcXuasHMy7077rBfTLbXx3tqY/rs:fit/g:sm/q:90/h:450/w:445/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMzg1/NzYtMTMxMjg2Nzcz/Mi5qcGVn.jpeg",
-    "has": true
+    "has": true,
+    "favorite": true
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "title": "The Fat of the Land",
     "year": 1997,
     "imgUrl": "https://i.discogs.com/mKruZsKIJ2rM3z7S-EPDeGeGi37SAAm1vNgc98p46Ek/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MTk0/LTE1OTI0MzA3Njct/NTQyOS5qcGVn.jpeg",
-    "has": true
+    "has": true,
+    "favorite": false
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "title": "Tical",
     "year": 1994,
     "imgUrl": "https://i.discogs.com/y4ZzUoF0QjL1U2TVD2lQvzHdjRec6VCIcEk4Cgm6BFs/rs:fit/g:sm/q:90/h:586/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5Mjcx/NC0xNjkxNjA4NDYy/LTY4NzcuanBlZw.jpeg",
-    "has": true
+    "has": true,
+    "favorite": true
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "title": "Black Sunday",
     "year": 1993,
     "imgUrl": "https://i.discogs.com/slJaKb2y8KFJ5HufRIwtYYIZtCZ4OjFkkRn-yXH9PLY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMzg3/OTczLTE1MzQyNTI2/MTUtNTEyOC5qcGVn.jpeg",
-    "has": true
+    "has": true,
+    "favorite": false
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "title": "Muse Sick-n-Hour Mess Age",
     "year": 1994,
     "imgUrl": "https://i.discogs.com/iA1xaK9zXSL1IHbWQ65EUzZ94LBwvT1Nlnt9mfg0Muw/rs:fit/g:sm/q:90/h:597/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNzMx/Mi0xMjA2NTM4OTcx/LmpwZWc.jpeg",
-    "has": true
+    "has": true,
+    "favorite": true
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@
     "title": "Bleach",
     "year": 1989,
     "imgUrl": "https://i.discogs.com/WTTg74ExM5Aq0hkwV_6CWO6LCOh-2mepiT6UOVUh238/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3OTU1/NTQtMTMwMTM3OTg3/Mi5qcGVn.jpeg",
-    "has": true
+    "has": true,
+    "favorite": false
   },
   {
     "id": 17,
@@ -133,7 +149,8 @@
     "title": "Experience",
     "year": 1992,
     "imgUrl": "https://i.discogs.com/Mm7SFR3Nm-PSOrNwBRRkDZGBjK3UG-gMqCh5LvuybJ8/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MTkz/LTEzMTM5MDkzODgu/anBlZw.jpeg",
-    "has": false
+    "has": false,
+    "favorite": true
   },
   {
     "id": 18,
@@ -141,7 +158,8 @@
     "title": "Toxicity",
     "year": 2001,
     "imgUrl": "https://i.discogs.com/m6SoQlmfroOIPh-b5x_NGIOBeS9UmTSYVGZ7SJTxRI4/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNjQy/Njc4LTE1Mzk5OTk3/ODEtMzE1My5qcGVn.jpeg",
-    "has": true
+    "has": true,
+    "favorite": false
   },
   {
     "id": 19,
@@ -149,7 +167,8 @@
     "title": "House of Pain",
     "year": 1992,
     "imgUrl": "https://i.discogs.com/L_fQYHRbmTvHxkoLZqf5mowdLZMVD5jaKKBtZkIeiUs/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5MjY0/My0xNTExNDc1OTM5/LTYwODguanBlZw.jpeg",
-    "has": true
+    "has": true,
+    "favorite": true
   },
   {
     "id": 20,
@@ -157,7 +176,8 @@
     "title": "L.A. Woman",
     "year": 1971,
     "imgUrl": "https://i.discogs.com/bH1B-ahQOgGDAqPMMOknMjEnmMNbnNLCHKSD2a_WRXQ/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MjI5/MTgtMTQ2NDkwNDEx/MC02MjE3LmpwZWc.jpeg",
-    "has": true
+    "has": true,
+    "favorite": false
   },
   {
     "id": 21,
@@ -165,7 +185,8 @@
     "title": "Return to the 36 Chambers: The Dirty Version",
     "year": 1995,
     "imgUrl": "https://i.discogs.com/UYAeifpYMEp6RVXtCXbXuLRoBITQ2eqkWr9GDtdOWP8/rs:fit/g:sm/q:90/h:300/w:301/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3OTUx/OC0xMDgwNTc3OTk4/LmpwZw.jpeg",
-    "has": false
+    "has": false,
+    "favorite": true
   },
   {
     "id": 22,
@@ -173,7 +194,8 @@
     "title": "Illmatic",
     "year": 1994,
     "imgUrl": "https://i.discogs.com/wrbuutLseZDQSdcRIKF9dK1k-K00qs08bHHqr-bZ0p8/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MjYw/NC0xNjk2MDg5NjAw/LTY2MTcuanBlZw.jpeg",
-    "has": true
+    "has": true,
+    "favorite": false
   },
   {
     "id": 23,
@@ -181,7 +203,8 @@
     "title": "The Doors",
     "year": 1967,
     "imgUrl": "https://i.discogs.com/DHwFRS-I_CPywWRempu2oYj9bxdEOKTaMbNuhRtSfq4/rs:fit/g:sm/q:90/h:398/w:398/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzOTUz/MTctMTMyODczNDAx/MC5qcGVn.jpeg",
-    "has": true
+    "has": true,
+    "favorite": true
   },
   {
     "id": 24,
@@ -189,7 +212,8 @@
     "title": "Nevermind",
     "year": 1991,
     "imgUrl": "https://i.discogs.com/uCeQtLv9OSNjC5_AjarCojZNepI9vqcnYeqsImnzXyg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwOTcw/NTEtMTU1NjQ0NDE4/MC03NTA1LmpwZWc.jpeg",
-    "has": true
+    "has": true,
+    "favorite": false
   },
   {
     "id": 25,
@@ -197,7 +221,8 @@
     "title": "Yo! Bum Rush the Show",
     "year": 1987,
     "imgUrl": "https://i.discogs.com/xDY4J1clarH7AH4TVRvkJNN5Fvj1xKb_JKTFNGP3BfI/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2NjM0/LTEzMzM0NTE0MDMu/anBlZw.jpeg",
-    "has": true
+    "has": true,
+    "favorite": true
   },
   {
     "id": 26,
@@ -205,7 +230,8 @@
     "title": "Beats, Rhymes And Life",
     "year": 1996,
     "imgUrl": "https://i.discogs.com/-fEOrt8AlN6Aa-Nz29SvNUilEtQ7IuINqbQoVTa--Uw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTU3/NC0xNDEyMjczODQ5/LTczNTguanBlZw.jpeg",
-    "has": false
+    "has": false,
+    "favorite": false
   },
   {
     "id": 27,
@@ -213,7 +239,8 @@
     "title": "Enter the Wu-Tang (36 Chambers)",
     "year": 1993,
     "imgUrl": "https://i.discogs.com/JVtYto3PpCrhttx7V3aR09GKcOlPw4SE8RYrdxaWPTk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1Mzc0/OS0xMTg1MTM0MTM1/LmpwZWc.jpeg",
-    "has": true
+    "has": true,
+    "favorite": true
   },
   {
     "id": 28,
@@ -221,7 +248,8 @@
     "title": "Same as It Ever Was",
     "year": 1994,
     "imgUrl": "https://i.discogs.com/1uJv7d18txuUUKo_RAdmD242E-KLS9jxk6NVLi7djWw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MTE3/MC0xNTM4OTAxNTYy/LTkyNTQuanBlZw.jpeg",
-    "has": false
+    "has": false,
+    "favorite": false
   },
   {
     "id": 29,
@@ -229,7 +257,8 @@
     "title": "Cypress Hill IV",
     "year": 1998,
     "imgUrl": "https://i.discogs.com/_elWjDBonuHgaLePr8IJ_59lOFCwraPUh9MbZjDqMXg/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMjc4/OS0xNDc2OTU4ODQ0/LTYxNjYuanBlZw.jpeg",
-    "has": false
+    "has": false,
+    "favorite": true
   },
   {
     "id": 30,
@@ -237,7 +266,8 @@
     "title": "Midnight Marauders",
     "year": 1993,
     "imgUrl": "https://i.discogs.com/BTkJhAP-XrREK2wzcjU5EVjEJjhkdZtbwoNnV9g5HXo/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzNjM1/LTE2OTEwMDE2OTIt/MzkxMC5qcGVn.jpeg",
-    "has": true
+    "has": true,
+    "favorite": false
   },
   {
     "id": 31,
@@ -245,6 +275,7 @@
     "title": "The Low End Theory",
     "year": 1991,
     "imgUrl": "https://i.discogs.com/W1ZNmsNGf1q0PJel3zSH9eO75cQkE_tjD91drIK5U94/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg3Mjkx/LTE1NTAwOTY4MDkt/ODQwOS5qcGVn.jpeg",
-    "has": true
+    "has": true,
+    "favorite": true
   }
 ]

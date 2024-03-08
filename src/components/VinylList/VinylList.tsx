@@ -9,6 +9,7 @@ interface VinylListProps {
   activeTab: Tabs;
   searchQuery: string;
   hiddenArtists: string[];
+  onlyFavorites: boolean;
   handleArtistClick: (artist: string) => void;
 }
 
@@ -17,6 +18,7 @@ const VinylList: FC<VinylListProps> = ({
   activeTab,
   searchQuery,
   hiddenArtists,
+  onlyFavorites,
   handleArtistClick,
 }) => {
   const groupAlbumsByArtist = (albums: IAlbum[]): IAlbum[][] => {
@@ -46,6 +48,9 @@ const VinylList: FC<VinylListProps> = ({
     title.toLowerCase().includes(searchQueryNormalized) ||
     year.toString().includes(searchQueryNormalized);
 
+  const filterByFavorites = ({ favorite }: IAlbum): boolean =>
+    onlyFavorites ? favorite : true;
+
   const compareAlbums = (a: IAlbum, b: IAlbum): number => {
     const articles = /^(a|an|the)\s+/i;
     const artistA = a.artist.replace(articles, '').toLowerCase();
@@ -62,6 +67,7 @@ const VinylList: FC<VinylListProps> = ({
     albums
       .filter(filteringRules[activeTab])
       .filter(filterBySearchQuery)
+      .filter(filterByFavorites)
       .sort(compareAlbums),
   );
 

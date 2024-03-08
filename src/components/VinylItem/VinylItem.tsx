@@ -2,6 +2,7 @@ import { type FC } from 'react';
 import { type IAlbum } from '../../models/IAlbum';
 import css from './VinylItem.module.css';
 import { Tabs } from '../../models/Tabs';
+import heart from '../../assets/svg/white-heart.svg';
 
 interface VinylItemProps {
   album: IAlbum;
@@ -9,22 +10,23 @@ interface VinylItemProps {
 }
 
 const VinylItem: FC<VinylItemProps> = ({
-  album: { title, year, imgUrl, has },
+  album: { title, year, imgUrl, has, favorite },
   activeTab,
 }) => {
-  const imgClasses =
-    activeTab === Tabs.total
-      ? [css.imgWrapper, has ? '' : css.opacity].join(' ').trim()
-      : css.imgWrapper;
+  const opacityClass =
+    activeTab === Tabs.total && !has ? css.opacity02 : css.opacity1;
 
   return (
-    <div>
-      <div className={imgClasses}>
-        <img className={css.img} src={imgUrl} alt={title} />
-      </div>
-      <div className={css.info}>
-        <p className={css.title}>{title}</p>
-        <p>{year}</p>
+    <div className={css.vinylItem}>
+      {favorite && <img className={css.heart} src={heart} alt="" />}
+      <div className={opacityClass}>
+        <div className={css.imgWrapper}>
+          <img className={css.img} src={imgUrl} alt={title} />
+        </div>
+        <div className={css.info}>
+          <p className={css.title}>{title}</p>
+          <p>{year}</p>
+        </div>
       </div>
     </div>
   );
