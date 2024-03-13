@@ -2,14 +2,14 @@ import { type FC } from 'react';
 import { type Tabs } from '../../models/Tabs';
 import css from './Counter.module.css';
 
-interface CountersProps {
+interface CounterProps {
   count: number;
   title: Tabs;
   handleTabClick: (tab: Tabs) => void;
   isActive: boolean;
 }
 
-const Counter: FC<CountersProps> = ({
+const Counter: FC<CounterProps> = ({
   count,
   title,
   handleTabClick,
