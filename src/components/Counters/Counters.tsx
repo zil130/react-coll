@@ -11,31 +11,25 @@ interface CountersProps {
 }
 
 const Counters: FC<CountersProps> = ({ activeTab, albums, handleTabClick }) => {
-  const total = albums.length;
-  const has = albums.filter((album) => album.has).length;
-  const wants = total - has;
+  const tabsOrder: Tabs[] = [Tabs.has, Tabs.wants, Tabs.total];
+  const tabsValues: Record<Tabs, number> = {
+    has: albums.filter((album) => album.has).length,
+    wants: albums.filter((album) => !album.has).length,
+    total: albums.length,
+  };
 
   return (
     <div className={css.wrapper}>
       <div className={css.counters}>
-        <Counter
-          handleTabClick={handleTabClick}
-          count={has}
-          title={Tabs.has}
-          isActive={activeTab === Tabs.has}
-        />
-        <Counter
-          handleTabClick={handleTabClick}
-          count={wants}
-          title={Tabs.wants}
-          isActive={activeTab === Tabs.wants}
-        />
-        <Counter
-          handleTabClick={handleTabClick}
-          count={total}
-          title={Tabs.total}
-          isActive={activeTab === Tabs.total}
-        />
+        {tabsOrder.map((tab) => (
+          <Counter
+            key={tab}
+            handleTabClick={handleTabClick}
+            count={tabsValues[tab]}
+            title={tab}
+            isActive={activeTab === tab}
+          />
+        ))}
       </div>
     </div>
   );
