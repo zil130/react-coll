@@ -1,6 +1,6 @@
 import { type FC } from 'react';
 import css from './Search.module.css';
-import Button from './Button/Button';
+import SearchBtn from '../SearchBtn/SearchBtn';
 
 interface SearchProps {
   searchQuery: string;
@@ -20,7 +20,7 @@ const Search: FC<SearchProps> = ({
   return (
     <div className={css.wrapper}>
       <label className={css.label} htmlFor="search">
-        <Button
+        <SearchBtn
           isRightBtn={false}
           searchQuery={searchQuery}
           hiddenArtists={hiddenArtists}
@@ -36,7 +36,7 @@ const Search: FC<SearchProps> = ({
             handleSearchQueryChange(e.target.value);
           }}
         />
-        <Button
+        <SearchBtn
           isRightBtn={true}
           searchQuery={searchQuery}
           hiddenArtists={hiddenArtists}

@@ -5,8 +5,13 @@
   height: 25px;
   background: transparent;
   border: none;
+  opacity: 0.5;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+}
+
+.btn:hover {
+  opacity: 1;
 }
 
 .btnRight {
