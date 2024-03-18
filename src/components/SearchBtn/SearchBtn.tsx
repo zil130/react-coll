@@ -1,8 +1,8 @@
 import { type FC } from 'react';
-import heart from '../../assets/svg/heart.svg';
-import cancel from '../../assets/svg/cancel.svg';
-import hamburger from '../../assets/svg/hamburger.svg';
-import squares from '../../assets/svg/squares.svg';
+import heart from '@assets/svg/heart.svg';
+import cancel from '@assets/svg/cancel.svg';
+import hamburger from '@assets/svg/hamburger.svg';
+import squares from '@assets/svg/squares.svg';
 import css from './SearchBtn.module.css';
 
 interface SearchBtnProps {

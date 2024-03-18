@@ -1,7 +1,7 @@
 import { type FC } from 'react';
-import Counter from '../Counter/Counter';
-import { Tabs } from '../../models/Tabs';
-import { type IAlbum } from '../../models/IAlbum';
+import Counter from '@components/Counter/Counter';
+import type IAlbum from '@models/IAlbum';
+import Tabs from '@models/Tabs';
 import css from './Counters.module.css';
 
 interface CountersProps {

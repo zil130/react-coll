@@ -1,6 +1,6 @@
 import { type FC } from 'react';
+import SearchBtn from '@components/SearchBtn/SearchBtn';
 import css from './Search.module.css';
-import SearchBtn from '../SearchBtn/SearchBtn';
 
 interface SearchProps {
   searchQuery: string;

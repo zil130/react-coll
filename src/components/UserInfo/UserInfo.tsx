@@ -1,5 +1,5 @@
 import { type FC } from 'react';
-import { type IUser } from '../../models/IUser';
+import type IUser from '@models/IUser';
 import css from './UserInfo.module.css';
 
 interface UserInfoProps {

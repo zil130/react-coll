@@ -1,8 +1,8 @@
 import { type FC } from 'react';
-import { type IAlbum } from '../../models/IAlbum';
+import type IAlbum from '@models/IAlbum';
+import Tabs from '@models/Tabs';
+import heart from '@assets/svg/white-heart.svg';
 import css from './VinylItem.module.css';
-import { Tabs } from '../../models/Tabs';
-import heart from '../../assets/svg/white-heart.svg';
 
 interface VinylItemProps {
   album: IAlbum;

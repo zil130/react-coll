@@ -1,5 +1,5 @@
 import { type FC } from 'react';
-import { type Tabs } from '../../models/Tabs';
+import type Tabs from '@models/Tabs';
 import css from './Counter.module.css';
 
 interface CounterProps {

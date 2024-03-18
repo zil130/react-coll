@@ -3,8 +3,10 @@ interface ILinks {
   url: string;
 }
 
-export interface IUser {
+interface IUser {
   name: string;
   description: string;
   links: ILinks[];
 }
+
+export default IUser;

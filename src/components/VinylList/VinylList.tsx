@@ -1,7 +1,7 @@
 import { type FC } from 'react';
-import VinylItem from '../VinylItem/VinylItem';
-import { type IAlbum } from '../../models/IAlbum';
-import { type Tabs } from '../../models/Tabs';
+import VinylItem from '@components/VinylItem/VinylItem';
+import type IAlbum from '@models/IAlbum';
+import type Tabs from '@models/Tabs';
 import css from './VinylList.module.css';
 
 interface VinylListProps {

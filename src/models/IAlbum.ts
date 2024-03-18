@@ -1,4 +1,4 @@
-export interface IAlbum {
+interface IAlbum {
   id: number;
   artist: string;
   title: string;
@@ -7,3 +7,5 @@ export interface IAlbum {
   has: boolean;
   favorite: boolean;
 }
+
+export default IAlbum;
